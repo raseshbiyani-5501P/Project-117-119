@@ -68,7 +68,7 @@ updateCanvas();
 }
 }
 
-function updateCanvas(){
+function clear_canvas(){
 
     background("white");
 
@@ -76,7 +76,7 @@ function updateCanvas(){
 
 function preload(){
 
-classifier = ml5.imageClassifier('DoddleNet');
+classifier = ml5.imageClassifier('DoodleNet');
 
 }
 
@@ -98,7 +98,7 @@ drawn_sketch = document.getElementById("label_span").innerHTML = results[0].labe
 document.getElementById("y_s").innerHTML= "Your Sketch : " + drawn_sketch;
 confi = Math.round(results[0].confidence*100);
 document.getElementById("confidence_span").innerHTML = confi + " % "; 
-
+www
 }
 
 
